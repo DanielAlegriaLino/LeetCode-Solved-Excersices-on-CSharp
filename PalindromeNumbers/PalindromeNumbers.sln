@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PalindromeNumbers", "PalindromeNumbers.csproj", "{48D5AE0E-F4C4-4FBF-BD1B-9FAFA13ED45A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palindrome", "Palindrome.csproj", "{48D5AE0E-F4C4-4FBF-BD1B-9FAFA13ED45A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome.Test", "..\Palindrome.Test\Palindrome.Test.csproj", "{243D075F-82AC-438A-8944-38223346408C}"
 EndProject
