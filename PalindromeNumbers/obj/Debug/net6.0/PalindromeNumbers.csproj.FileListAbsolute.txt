@@ -1,0 +1,15 @@
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.csproj.AssemblyReference.cache
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.AssemblyInfoInputs.cache
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.AssemblyInfo.cs
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.csproj.CoreCompileInputs.cache
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\bin\Debug\net6.0\PalindromeNumbers.exe
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\bin\Debug\net6.0\PalindromeNumbers.deps.json
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\bin\Debug\net6.0\PalindromeNumbers.runtimeconfig.json
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\bin\Debug\net6.0\PalindromeNumbers.dll
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\bin\Debug\net6.0\ref\PalindromeNumbers.dll
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\bin\Debug\net6.0\PalindromeNumbers.pdb
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.dll
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\ref\PalindromeNumbers.dll
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.pdb
+C:\Users\52427\home\Programming\CSharpPractices\LeetCodeExercises\PalindromeNumbers\obj\Debug\net6.0\PalindromeNumbers.genruntimeconfig.cache
