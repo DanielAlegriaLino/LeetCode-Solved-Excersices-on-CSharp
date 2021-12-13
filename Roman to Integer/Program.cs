@@ -7,7 +7,6 @@ public class Solution
 		char[] text_in_array = s.ToArray();
 		int valor_numerico_total = 0;
 
-
 		Dictionary<char, int> valores_numericos_romanos = new Dictionary<char, int>
 		{
 			{'I',1 },
@@ -19,44 +18,34 @@ public class Solution
 			{'M',1000 },
 		};
 
+		bool isBeforeCharDivisibleBy10Or1 = false;
+		bool isBeforeNumberHigherThanBefore = false;
+		bool isCurrentCharTheFirstOne = false;
+		bool isCurrentCharDivisibleBy5 = false;
+
 		for (int i = 0; i < text_in_array.Length; i++)
 		{
+
 			char valor_romano_actual = text_in_array[i];
 
-			if (i > 0)
+			try
 			{
-				if (valores_numericos_romanos[valor_romano_actual] % 5 == 0)
-				{
-					//Check if current number is 1 or divisible by 10 
-					if (MathF.Log10(valores_numericos_romanos[text_in_array[i - 1]]) % 1 == 0 )
-					{
-						if(valores_numericos_romanos[text_in_array[i-1]] < valores_numericos_romanos[text_in_array[i]]) 
-						{ 
-						valor_numerico_total += valores_numericos_romanos[valor_romano_actual];
-						valor_numerico_total -= valores_numericos_romanos[text_in_array[i - 1]] * 2;
-						}
-						else 
-						{
-						valor_numerico_total += valores_numericos_romanos[valor_romano_actual];
-						}
-					}
-					else
-					{
-						valor_numerico_total += valores_numericos_romanos[valor_romano_actual];
-					}
-				}
-				else
-				{
-					valor_numerico_total += valores_numericos_romanos[valor_romano_actual];
-				}
-			}
-			else
+				isCurrentCharTheFirstOne = i > 0;
+				isCurrentCharDivisibleBy5 = valores_numericos_romanos[valor_romano_actual] % 5 == 0;
+				isBeforeCharDivisibleBy10Or1 = MathF.Log10(valores_numericos_romanos[text_in_array[i - 1]]) % 1 == 0;
+				isBeforeNumberHigherThanBefore = valores_numericos_romanos[text_in_array[i - 1]] < valores_numericos_romanos[text_in_array[i]];
+			} 
+			catch (IndexOutOfRangeException) { }
+			catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+
+			if (isBeforeCharDivisibleBy10Or1 && isCurrentCharTheFirstOne && isCurrentCharDivisibleBy5 && isBeforeNumberHigherThanBefore)
 			{
-				valor_numerico_total += valores_numericos_romanos[valor_romano_actual];
+				valor_numerico_total -= valores_numericos_romanos[text_in_array[i - 1]] * 2;
 			}
+
+			valor_numerico_total += valores_numericos_romanos[valor_romano_actual];
 
 		}
-
 		return valor_numerico_total;
 
 
