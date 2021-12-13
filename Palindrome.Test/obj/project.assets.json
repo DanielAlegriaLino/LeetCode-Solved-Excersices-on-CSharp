@@ -1676,6 +1676,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Palindrome/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Palindrome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Palindrome.dll": {}
+        }
       }
     }
   },
@@ -6046,11 +6056,17 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Palindrome/1.0.0": {
+      "type": "project",
+      "path": "../PalindromeNumbers/Palindrome.csproj",
+      "msbuildProject": "../PalindromeNumbers/Palindrome.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
+      "Palindrome >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.console >= 2.4.1",
@@ -6083,7 +6099,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\52427\\home\\Programming\\CSharpPractices\\LeetCodeExercises\\PalindromeNumbers\\Palindrome.csproj": {
+              "projectPath": "C:\\Users\\52427\\home\\Programming\\CSharpPractices\\LeetCodeExercises\\PalindromeNumbers\\Palindrome.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

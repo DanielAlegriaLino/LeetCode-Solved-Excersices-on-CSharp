@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oJ/eq9mV2f9Bo8V8iRTvMXg+BpO4dLFwJV+Ua3Y3m0mpFyHvz+Su7sQDbvszTpf3Hf95QWha1L5FUTaLdFdV/A==",
+  "dgSpecHash": "auJ4aQubCvkivTDF8lSHbkN1VDjl27g8X2sXmjPFj/ZCFklfiL4t0GJ0M5+mwN0dFddvKdGF1USjii80AJQRqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\52427\\home\\Programming\\CSharpPractices\\LeetCodeExercises\\PalindromeNumbers\\PalindromeNumbers.csproj",
+  "projectFilePath": "C:\\Users\\52427\\home\\Programming\\CSharpPractices\\LeetCodeExercises\\PalindromeNumbers\\Palindrome.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

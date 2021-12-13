@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "48d5ae0e-f4c4-4fbf-bd1b-9fafa13ed45a": {
+      "ProjectGuid": "48d5ae0e-f4c4-4fbf-bd1b-9fafa13ed45a",
+      "DisplayName": "Palindrome",
+      "ColorIndex": 0
+    },
+    "243d075f-82ac-438a-8944-38223346408c": {
+      "ProjectGuid": "243d075f-82ac-438a-8944-38223346408c",
+      "DisplayName": "Palindrome.Test",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
