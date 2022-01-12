@@ -7,8 +7,46 @@ public class Solution
 	public int Change(int amount, int[] coins)
 	{
 		quicksort(coins, 0, coins.Length - 1);
-		string[,] nemo = new string[amount + 1, coins.Length];
-		return GetCombinatonNumber(amount, coins, 0, nemo);
+
+		int[,] nemo = new int[amount + 1, coins.Length + 1];
+		for (int y = 0; y < coins.Length + 1; y++)
+		{
+			for (int x = 0; x < amount + 1; x++)
+			{
+				nemo[x, y] = -1;
+			}
+		}
+
+
+
+		for (int y = 0; y < coins.Length + 1; y++)
+		{
+			for (int x = 0; x < amount + 1; x++)
+			{
+				if (x == 0) { nemo[x, y] = 1; continue; }
+				if (y == 0) { nemo[x, y] = 0; continue; }
+
+				if (amount + 1 < coins[y - 1])
+				{
+					nemo[x, y] = nemo[x, y - 1];
+					continue;
+				}
+
+				try
+				{
+					nemo[x, y] = nemo[x - coins[y - 1], y] + nemo[x, y - 1];
+				}
+				catch (IndexOutOfRangeException)
+				{
+					nemo[x, y] = nemo[x, y - 1];
+				}
+			}
+		}
+
+
+		return nemo[nemo.GetUpperBound(0), nemo.GetUpperBound(1)]; ;
+
+
 	}
 
 	public void quicksort(int[] vec, int izq, int der)
@@ -40,27 +78,6 @@ public class Solution
 			quicksort(vec, izq, j);
 		if (i < der)
 			quicksort(vec, i, der);
-	}
-
-	public int GetCombinatonNumber(int a_target, int[] a_numbers, int a_current_pos, string[,] a_nemo)
-	{
-		//Base cases
-		if (a_target < 0) { return 0; }
-		if (a_current_pos > a_numbers.GetUpperBound(0)) { return 0; };
-		if (a_target == 0) { return 1; }
-		if (a_target < a_numbers[a_current_pos]) { return 0; }
-
-		if (a_nemo[a_target, a_current_pos] != null) { return Convert.ToInt32(a_nemo[a_target, a_current_pos]); }
-
-		var tree_using_first_value_of_list = GetCombinatonNumber(a_target - a_numbers[a_current_pos], a_numbers, a_current_pos, a_nemo);
-
-		var tree_without_using_first_value_of_list = GetCombinatonNumber(a_target, a_numbers, a_current_pos + 1, a_nemo);
-
-		a_nemo[a_target, a_current_pos] = Convert.ToString(tree_using_first_value_of_list + tree_without_using_first_value_of_list);
-
-		return Convert.ToInt32(a_nemo[a_target, a_current_pos]);
-
-
 	}
 
 }
